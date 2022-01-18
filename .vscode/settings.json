@@ -1,0 +1,8 @@
+{
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "i18n-ally.keystyle": "flat",
+  "i18n-ally.localesPaths": ["src/i18n"],
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.sourceLanguage": "en-US",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
