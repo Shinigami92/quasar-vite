@@ -1,0 +1,10 @@
+{
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "baseUrl": "http://localhost:5173",
+  "viewportWidth": 1800,
+  "viewportHeight": 950,
+  "component": {
+    "testFiles": "**/*.spec.ct.ts",
+    "componentFolder": "src"
+  }
+}

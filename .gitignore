@@ -3,3 +3,10 @@ node_modules
 dist
 dist-ssr
 *.local
+
+*-debug.log
+
+coverage
+
+cypress/videos
+cypress/screenshots
