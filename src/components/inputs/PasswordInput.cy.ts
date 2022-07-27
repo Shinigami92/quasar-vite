@@ -1,4 +1,4 @@
-import { mount } from '@cypress/vue';
+import { mount } from 'cypress/vue';
 import { Quasar } from 'quasar';
 import PasswordInput from './PasswordInput.vue';
 

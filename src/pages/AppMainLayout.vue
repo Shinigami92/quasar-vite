@@ -8,5 +8,7 @@ const password = ref('');
 <template lang="pug">
 QLayout(view="hHh LpR lFf")
   QPageContainer
-    PasswordInput(v-model="password")
+    QCard
+      QCardSection
+        PasswordInput(v-model="password")
 </template>
