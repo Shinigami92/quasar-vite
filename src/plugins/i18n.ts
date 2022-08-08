@@ -4,6 +4,7 @@ import { createI18n } from 'vue-i18n';
 
 export default ({ app }: { app: App<Element> }): void => {
   const i18n = createI18n({
+    legacy: false,
     locale: 'en-US',
     fallbackLocale: 'en-US',
     messages,
@@ -11,7 +12,7 @@ export default ({ app }: { app: App<Element> }): void => {
 
   const i18nLocale = useI18nLocale();
 
-  i18n.global.locale = i18nLocale.value;
+  i18n.global.locale.value = i18nLocale.value;
 
   app.use(i18n);
 };
