@@ -1,13 +1,6 @@
-import AppMainLayout from '@/pages/AppMainLayout.vue';
-import type { Router, RouteRecordRaw } from 'vue-router';
+import type { Router } from 'vue-router';
 import { createRouter, createWebHashHistory } from 'vue-router';
-
-const routes: RouteRecordRaw[] = [
-  {
-    path: '/:pathMatch(.*)*',
-    component: AppMainLayout,
-  },
-];
+import routes from './routes';
 
 const router: Router = createRouter({
   history: createWebHashHistory(),

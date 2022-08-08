@@ -4,7 +4,7 @@ import { createApp, h, provide } from 'vue';
 
 /* Quasar */
 
-import { Quasar, Dialog } from 'quasar';
+import { Quasar, Dialog, Notify } from 'quasar';
 
 import '@quasar/extras/roboto-font/roboto-font.css';
 import iconSet from 'quasar/icon-set/mdi-v6';
@@ -28,8 +28,15 @@ const app = createApp({
 app.use(Quasar, {
   plugins: {
     Dialog,
+    Notify,
   },
   iconSet,
+  config: {
+    notify: {
+      position: 'top-right',
+      type: 'info',
+    },
+  },
 });
 
 app.use(router);
